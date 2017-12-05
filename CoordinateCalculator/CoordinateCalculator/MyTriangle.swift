@@ -29,9 +29,9 @@ struct MyTriangle: MyShape, ShapeCalculation {
     }
     
     func makeCoordinates() -> [MyPoint] {
-        return [getLine(lineAB),
-                         getLine(lineBC),
-                         getLine(lineAC)]
+        return [getPoint(lineAB),
+                         getPoint(lineBC),
+                         getPoint(lineAC)]
     }
     
     func calculate() -> Double {
